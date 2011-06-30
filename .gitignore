@@ -2,3 +2,4 @@
 *.beam
 deps/
 priv/
+ebin/

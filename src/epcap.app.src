@@ -2,11 +2,7 @@
  [
   {description, "libpcap port"},
   {vsn, "0.05"},
-  {modules, [
-      epcap,
-      epcap_net,
-      sniff
-          ]},
+  {modules, []},
   {registered, [epcap]},
   {applications, [
                   kernel,
