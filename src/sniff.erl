@@ -120,6 +120,10 @@ handle_info({packet, DLT, Time, Len, Packet}, sniffing, _) ->
     {next_state, sniffing, []};
 
 % epcap port stopped
+handle_info({epcap, timeout}, sniffing, _) ->
+    error_logger:info_report("Timeout"),
+    {next_state, sniffing, []};
+
 handle_info({'EXIT', _Pid, normal}, sniffing, _) ->
     {next_state, sniffing, []};
 
