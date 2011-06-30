@@ -1,2 +1,4 @@
 *.[oa]
 *.beam
+deps/
+priv/
